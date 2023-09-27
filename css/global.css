@@ -1,0 +1,44 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Fira Sans", sans-serif;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+  /* Por padrão os títulos e parafráfos tem margin automática */
+  margin: 0px;
+}
+
+ul {
+  /* Por padrão o ul tem margin e padding automática*/
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.subtitulo {
+  font-size: 7.5rem;
+  word-break: break-all;
+  text-transform: uppercase;
+  max-width: 4ch;
+}
+
+@media (max-width: 800px)  {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important; 
+  }
+}
+

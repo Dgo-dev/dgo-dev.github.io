@@ -1,0 +1,38 @@
+.header {
+  /* O max-width faz que quando a tela atinja os 1200px definidos o conteúdo pare de crescer infinitamente e concentr-se somente nos 1200px definidos. */
+  max-width: 1200px;
+  /* Foi adicionado a propriedade padding para dar espaçamento nos conteúdos do topo e dos cantos, o padding foi adicionado porque caso fosse necessário adicionar um background pegaria o conteúdo todo e o margin não pegaria o conteúdo todo */
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header-menu a {
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #141414;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .header-menu a {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+}
